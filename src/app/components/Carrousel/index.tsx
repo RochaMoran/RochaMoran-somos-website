@@ -27,7 +27,8 @@ export default function Carrousel() {
               key={item.id}
               title={item.title}
               subtitle={item.subtitle}
-              img={item.image}
+              src={item.src}
+              isVideo={item.isVideo}
             />
           ))}
         </div>

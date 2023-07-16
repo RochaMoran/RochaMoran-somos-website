@@ -6,7 +6,7 @@ export const aboutOptions: Array<SubMenuOptions> = [
     options: [
       {
         label: "Overview",
-        url: "/overview",
+        url: "/about",
         sublevel: 0,
       },
       {
