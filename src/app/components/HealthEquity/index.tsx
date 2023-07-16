@@ -14,7 +14,7 @@ export default function HealthEquity() {
           erat ligula, commodo id vestibulum ac, cursus et nisi. Vivamus id urna
           posuere orci molestie laoreet nec a eros.
         </p>
-        <div className="mt-5 flex justify-start items-center">
+        <div className="mt-5 flex justify-start items-center container-buttons__health">
             <a href="" className="btn-health">
                 ANNUAL REPORT
             </a>
