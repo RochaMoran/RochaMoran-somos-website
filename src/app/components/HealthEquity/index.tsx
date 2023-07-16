@@ -4,15 +4,13 @@ export default function HealthEquity() {
   return (
     <div className="section health">
       <div className="health-content animated">
-        <h6>FEATURES</h6>
+        <h6>HEALTH EQUITY NY</h6>
         <h4 className="font-bold health-content__title">
-          Health Education <br /> Resources
+          Improving Health <br /> in Our Communities
         </h4>
         <p className="health-content__content">
-          Aliquam nec enim nec est porta blandit. Mauris blandit nunc at
-          pharetra tempor. Donec ut leo sed enim bibendum iaculis et nec eros.
-          erat ligula, commodo id vestibulum ac, cursus et nisi. Vivamus id urna
-          posuere orci molestie laoreet nec a eros.
+          SOMO&rsquo;s network provides culturally competent care to patients located in some of NYC&rsquo;s
+          most vulnerable communities and inmigrant neighborhoods of New York.
         </p>
         <div className="mt-5 flex justify-start items-center container-buttons__health">
             <a href="" className="btn-health">
