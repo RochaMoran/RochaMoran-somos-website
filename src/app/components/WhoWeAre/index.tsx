@@ -8,7 +8,7 @@ export default function WhoWeAre() {
 
   return (
     <article className={`section about ${show ? 'animate-fade-up' : ''}`} ref={whoWeAreRef}>
-      <h3 className="title about-title">Who we are</h3>
+      <h3 className="title about-title">Who We Are</h3>
       <p>
         SOMOS Community Care (SOMOS), is New York’s only provider-led,
         nonprofit, community-based integrated health care network. It is

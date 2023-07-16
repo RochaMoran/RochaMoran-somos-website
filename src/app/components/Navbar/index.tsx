@@ -9,6 +9,7 @@ import {
   eventsOptions,
   actionsOptions,
   newsOptions,
+  findDoctorOptions,
 } from "@/app/data/submenu";
 import Link from "next/link";
 
@@ -137,9 +138,23 @@ export default function NavBar({ isDropdownOpen, updateDropdownOpen, isActiveMen
           {isDropdownOpen === "news" && <SubMenu columns={newsOptions} />}
         </li>
         <li>
-          <button type="button" className={`${styles.btnFindDoctor}`}>
+          <button onClick={() => updateDropdownOpen("findDoctor")} className={`${styles.btnFindDoctor}`}>
             <span>FIND A DOCTOR</span>
           </button>
+            {isDropdownOpen === "findDoctor" && (
+              <ul className={`animate-fade-left animate-duration-200 animate-ease-in-out ${styles.findDoctorList}`}>
+                {findDoctorOptions.map((option, i) => (
+                  <li
+                    key={i}
+                    className={styles.findDoctorItem}
+                  >
+                    <a href={option.url}>
+                      <span>{option.label}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
         </li>
       </ul>
     </nav>

@@ -1,6 +1,7 @@
 export interface MenuOption {
   label: string;
   url: string;
+  sublevel: number;
 }
 
 export interface SubMenuOptions {
