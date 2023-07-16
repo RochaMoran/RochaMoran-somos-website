@@ -1,13 +1,16 @@
 "use client";
 import Image from "next/image";
-import React from "react";
 import { BiSolidUser } from "react-icons/bi";
 import { BsCalendarWeekFill } from "react-icons/bs";
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
+import { useRef } from "react";
 
 export default function PostCard({ data }: any) {
   const { img, icon, title, description, author, date } = data;
+  const postRef = useRef(null);
+  const { show } = useIntersectionObserver(postRef)
   return (
-    <div className="animated project">
+    <div className={`animated project ${show ? 'animate-fade-up' : 'opacity-0'}`} ref={postRef}>
       <Image src={img} className="project-image" alt={title} />
       <div className={`project-info`}>
         <Image src={icon} className="inline-block project-icon" alt={title} />

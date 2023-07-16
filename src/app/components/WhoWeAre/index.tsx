@@ -1,8 +1,13 @@
-import React from "react";
+'use client';
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
+import { useRef } from "react";
 
 export default function WhoWeAre() {
+  const whoWeAreRef = useRef(null);
+  const { show } = useIntersectionObserver(whoWeAreRef)
+
   return (
-    <article className="section about">
+    <article className={`section about ${show ? 'animate-fade-up' : ''}`} ref={whoWeAreRef}>
       <h3 className="title about-title">Who we are</h3>
       <p>
         SOMOS Community Care (SOMOS), is New York’s only provider-led,

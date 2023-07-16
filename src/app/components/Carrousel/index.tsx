@@ -1,26 +1,20 @@
 'use client';
-import useCarrousel from "@/app/hooks/useCarrousel";
 import ItemCarrosuel from "../ItemCarrousel"
 import { carrouselData } from "@/app/data/carrousel";
 import { useState } from "react";
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
+import { useRef } from "react";
 
 export default function Carrousel() {
     const [index, setIndex] = useState(0);
-    const size = carrouselData.length;
-
-    function toggleBack() {
-      setIndex(prevIndex => (prevIndex === 0 ? size - 1 : prevIndex - 1));
-    }
-  
-    function toggleNext() {
-      setIndex(prevIndex => (prevIndex === size - 1 ? 0 : prevIndex + 1));
-    }
+    const carrouselRef = useRef(null);
+    const { show } = useIntersectionObserver(carrouselRef)
   
     const updateIndex = (i: number) => {
       setIndex(() => i);
     };
     return (
-        <article className={`main-carrousel`}>
+        <article className={`main-carrousel ${show ? 'animate-fade-down' : ''}`} ref={carrouselRef}>
         <div
           className='main-carrousel__container'
           style={{

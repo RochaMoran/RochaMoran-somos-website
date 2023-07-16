@@ -4,6 +4,8 @@ import NavBar from "../Navbar";
 import { useState, useEffect } from "react";
 import styles from "../../../../styles/components/Header.module.scss";
 import { Roboto } from "next/font/google";
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
+import { useRef } from "react";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -13,6 +15,8 @@ const roboto = Roboto({
 export  default function Header () {
   const [isDropdownOpen, setIsDropdownOpen] = useState<string>("");
   const [isActiveMenu, setIsActiveMenu] = useState<boolean>(false);
+  const headerRef = useRef(null);
+  const { show } = useIntersectionObserver(headerRef)
 
   const updateDropdownOpen = (option: string) => {
     if (isDropdownOpen === option) {
@@ -45,7 +49,7 @@ export  default function Header () {
   
 
   return (
-    <header className={`bg-white ${styles.header} ${roboto.className}`} onMouseLeave={closeDropdown}>
+    <header className={`bg-white ${styles.header} ${roboto.className} ${show ? 'animate-fade-up' : ''}`} ref={headerRef} onMouseLeave={closeDropdown}>
       <TopBar toggleMenu={toggleMenu}  isActiveMenu={isActiveMenu}/>
       <NavBar
         isDropdownOpen={isDropdownOpen}

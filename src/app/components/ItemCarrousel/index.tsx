@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ItemCarrosuel({ title, subtitle, img }: any) {
   return (
-    <div className="main-carrousel__item">
+    <div className={`main-carrousel__item`}>
       <div className="carrousel-item__text">
         <span>{subtitle}</span>
         <h3>{title}</h3>
