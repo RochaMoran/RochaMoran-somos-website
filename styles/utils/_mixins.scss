@@ -66,3 +66,30 @@
     }
   }
 }
+
+
+@mixin decoration-container($color) {
+  position: relative;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    background-color: $color;
+  }
+  
+  &::after {
+    height: 15px;
+    width: 100px;
+  }
+
+  &::before {
+    width: 15px;
+    height: 100px;
+  }
+}

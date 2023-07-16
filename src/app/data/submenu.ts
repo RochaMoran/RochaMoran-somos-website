@@ -6,15 +6,15 @@ export const aboutOptions: Array<SubMenuOptions> = [
     options: [
       {
         label: "OUR MISSION",
-        url: "/about/our-mission",
+        url: "/about",
       },
       {
         label: "OUR TEAM",
-        url: "/about/our-team",
+        url: "/about",
       },
       {
         label: "OUR PARTNERS",
-        url: "/about/our-partners",
+        url: "/about",
       },
     ],
   },
@@ -23,15 +23,15 @@ export const aboutOptions: Array<SubMenuOptions> = [
     options: [
       {
         label: "OUR MISSION",
-        url: "/about/our-mission",
+        url: "/about",
       },
       {
         label: "OUR TEAM",
-        url: "/about/our-team",
+        url: "/about",
       },
       {
         label: "OUR PARTNERS",
-        url: "/about/our-partners",
+        url: "/about",
       },
     ],
   },
@@ -40,15 +40,15 @@ export const aboutOptions: Array<SubMenuOptions> = [
     options: [
       {
         label: "OUR MISSION",
-        url: "/about/our-mission",
+        url: "/about",
       },
       {
         label: "OUR TEAM",
-        url: "/about/our-team",
+        url: "/about",
       },
       {
         label: "OUR PARTNERS",
-        url: "/about/our-partners",
+        url: "/about",
       },
     ],
   },
@@ -57,15 +57,15 @@ export const aboutOptions: Array<SubMenuOptions> = [
     options: [
       {
         label: "OUR MISSION",
-        url: "/about/our-mission",
+        url: "/about",
       },
       {
         label: "OUR TEAM",
-        url: "/about/our-team",
+        url: "/about",
       },
       {
         label: "OUR PARTNERS",
-        url: "/about/our-partners",
+        url: "/about",
       },
     ],
   },

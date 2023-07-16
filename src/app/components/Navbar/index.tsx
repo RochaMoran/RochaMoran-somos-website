@@ -10,6 +10,7 @@ import {
   actionsOptions,
   newsOptions,
 } from "@/app/data/submenu";
+import Link from "next/link";
 
 export default function NavBar({ isDropdownOpen, updateDropdownOpen, isActiveMenu }: any) {
   const pathname = usePathname();
@@ -22,10 +23,10 @@ export default function NavBar({ isDropdownOpen, updateDropdownOpen, isActiveMen
       <ul
         className={`flex relative justify-between items-center py-1 2xl:[&>li]:text-[15px] sm:[&>li]:text-[12px] [&>li]:font-semibold ${styles.addressTopBar} ${styles.navbarList}`}
       >
-        <li className={`${isActive("/") ? styles.activeItem : ""}`}>
-          <a className={styles.navbarItemLink} href="#">
+        <li className={`${isActive("/home") ? styles.activeItem : ""}`}>
+          <Link className={styles.navbarItemLink} href="/home">
             HOME
-          </a>
+          </Link>
         </li>
         <li
           className={`flex justify-center items-center ${

@@ -1,0 +1,8 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.aboutSection {
+    background-image: url(../../public/images/head-title-image.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

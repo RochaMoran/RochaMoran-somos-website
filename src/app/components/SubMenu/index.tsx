@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../../../../styles/components/Header.module.scss";
 import { SubMenuProps } from "@/app/models/menu";
 
@@ -14,7 +15,7 @@ export default function SubMenu({ columns }: SubMenuProps) {
               {column &&
                 column.options.map((option, j) => (
                   <li key={j}>
-                    <a href={option.url}>{option.label}</a>
+                    <Link href={option.url}>{option.label}</Link>
                   </li>
                 ))}
             </ul>
