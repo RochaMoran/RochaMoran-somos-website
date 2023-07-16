@@ -2,6 +2,12 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HeadTitle from "../components/HeadTitle";
 import Section from "../components/Section";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "SOMOS COMMUNITY CARE | ABOUT US",
+  description: "SOMOS is the only successful total cost of care Value-Based Payment model implemented by a physician-led group.",
+};
 
 export default function About() {
   return (

@@ -5,6 +5,12 @@ import Header from "../components/Header";
 import HealthEquity from "../components/HealthEquity";
 import LastNews from "../components/LastNews";
 import WhoWeAre from "../components/WhoWeAre";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "SOMOS COMMUNITY CARE | HOME",
+  description: "SOMOS is the only successful total cost of care Value-Based Payment model implemented by a physician-led group.",
+};
 
 export default function Home() {
   return (
