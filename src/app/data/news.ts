@@ -11,17 +11,23 @@ export const newsData = [
         icon: icon1,
         title: 'Lorem Ipsum',
         description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        author: 'CNN ESPAÑOL',
+        date: '07/07/23',
     },
     {
         img: img2,
         icon: icon2,
         title: 'Lorem Ipsum',
         description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        author: 'CBS NEWS',
+        date: '07/07/21',
     },
     {
         img: img3,
         icon: icon3,
         title: 'Lorem Ipsum',
         description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        author: 'Telemundo 47',
+        date: '07/03/23',
     },
 ];

@@ -9,7 +9,7 @@ export default function LastNews() {
             {
                 newsData && (
                     newsData.map((news: any, i: number) => (
-                        <PostCard key={i} title={news.title} icon={news.icon} img={news.img} description={news.description}/>
+                        <PostCard key={i} data={news} />
                     ))
                 )
             }
