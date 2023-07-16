@@ -63,7 +63,7 @@ export default function About() {
       </Section>
       <Section
         title="Transforming a Boken System"
-        image="/images/about-img-4.webp"
+        image="/images/about-img-4.png"
         isInvert={true}
         extraClassName="section-about__transforming"
       >

@@ -1,7 +1,7 @@
 "use client";
 import TopBar from "../TopBar";
 import NavBar from "../Navbar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../../../../styles/components/Header.module.scss";
 import { Roboto } from "next/font/google";
 
@@ -38,6 +38,11 @@ export  default function Header () {
       document.body.style.overflow = 'auto';
     }
   }
+
+  useEffect(() => {
+    document.body.style.overflow = 'auto';
+  }, [])
+  
 
   return (
     <header className={`bg-white ${styles.header} ${roboto.className}`} onMouseLeave={closeDropdown}>

@@ -60,11 +60,12 @@
                     justify-content: left;
                     height: max-content;
                     padding-left: 15px;
+                    padding-bottom: 60px;
                     
                     & li {
                         & span {
                             display: block;
-                            margin-top: 15px;
+                            margin-top: 10px;
                         }
 
                         & span:nth-child(1) {
