@@ -1,0 +1,42 @@
+.languageSelector {
+  position: relative;
+  display: inline-block;
+}
+
+.selectedLanguage {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.languageList {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 15;
+  padding: 0.5rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: max-content;
+}
+
+.languageItem {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.2s ease-in-out;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #e9e9e9;
+  }
+}
+
+.dropdownActive {
+   transform: rotate(180deg);
+}
