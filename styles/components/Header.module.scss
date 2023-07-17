@@ -10,21 +10,6 @@
     top: 0;
     z-index: 9;
 }
-.header,
-.topBar,
-.navbar {
-    background-color: black;
-    color: white !important;
-
-    & p,
-    & span,
-    & a,
-    & button,
-    & svg,
-    & div span {
-        color: white !important;
-    }
-}
 
 .topBar {
     width: 80%;
