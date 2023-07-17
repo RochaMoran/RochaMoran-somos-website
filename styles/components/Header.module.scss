@@ -11,6 +11,20 @@
     z-index: 9;
 }
 
+.header,
+.topBar,
+.navbar {
+    background-color: $color_primary;
+    
+
+    & p,
+    & span,
+    & a,
+    & li {
+        color: white !important;
+    }
+}
+
 .topBar {
     width: 80%;
 
