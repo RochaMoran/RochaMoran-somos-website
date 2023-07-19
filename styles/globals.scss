@@ -535,30 +535,17 @@
 // PROJECTS
 .last-news {
   position: relative;
- 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background-image: url(../public/images/world.svg);
-    background-size: contain;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    z-index: -1;
-    opacity: .3;
-  }
 }
 
 .project {
   margin: 10px;
   overflow: hidden;
+  border-radius: 15px;
+  height: max-content;
 }
 
 .project-footer {
-  color: $color_thirty;
+  color: $color_seven;
 }
 
 .container-projects {
@@ -591,11 +578,9 @@
 
 .project-info {
   position: relative;
-  width: 90%;
+  width: 100%;
   background-color: white;
-  box-shadow: 3px 3px 10px #e4e4e4;
   padding: 20px;
-  transform: translate(5%, -15%);
 }
 
 .project-info::after {
@@ -627,7 +612,7 @@
 }
 
 .project-title {
-  color: $color_primary;
+  color: $color_seven;
 }
 
 // FOOTER 

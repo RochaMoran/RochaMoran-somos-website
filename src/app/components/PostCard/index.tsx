@@ -13,7 +13,6 @@ export default function PostCard({ data }: any) {
     <div className={`animated project ${show ? 'animate-fade-up' : 'opacity-0'}`} ref={postRef}>
       <Image src={img} className="project-image" alt={title} />
       <div className={`project-info`}>
-        <Image src={icon} className="inline-block project-icon" alt={title} />
         <h6 className="inline-block project-title">{title}</h6>
         <p>{description}</p>
         <footer className="flex justify-between project-footer text-[11px] [&>span]:font-bold [&>span]:flex [&>span]:justify-center [&>span]:items-center mt-6">
