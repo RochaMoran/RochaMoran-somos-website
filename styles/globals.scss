@@ -365,7 +365,6 @@
 
   @media screen and (max-width: 750px) {
    width: 90%;
-  //  color: white;
   }
 }
 
@@ -386,6 +385,55 @@
   @media screen and (max-width: 750px) {
     font-size: 1.8rem;
    }
+}
+
+.health-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #0e76bc 0%, 50%, $color_five 0%);
+
+  & .health-personal,
+  & .health-communities {
+    width: 40%;
+    min-height: 250px;
+    padding: 30px 20px 20px 20px;
+
+    & h4 {
+      font-weight: bold;
+      margin-bottom: 10px;
+
+      @media screen and (max-width: 850px) {
+        margin: 0;
+      }
+    }
+
+    & a {
+      width: max-content;
+      display: block;
+      margin: 20px auto;
+      color: white;
+      border-color: white;
+    }
+
+    @media screen and (max-width: 1050px) {
+      width: 50%;
+    }
+  
+    @media screen and (max-width: 850px) {
+      padding: 0;
+      min-height: max-content;
+      margin-top: 50px;
+      width: 95%;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+    background: linear-gradient(180deg, #0e76bc 0%, 50%, $color_five 0%);
+    height: max-content;
+    padding: 0;
+  }
 }
 
 .container-buttons__health {
