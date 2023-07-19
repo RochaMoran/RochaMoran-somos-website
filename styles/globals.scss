@@ -10,25 +10,13 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-.dropdown-list,
-body {
-  background-color: $color_primary;
-
-  & p,
-  & span,
-  & a,
-  & li {
-      color: white !important;
-  }
-}
-
 .dropdown-list {
     position: absolute;
     top: 100%;
     left: 0;
     z-index: 10;
     padding: 0.5rem;
-    // background-color: #fff;
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
