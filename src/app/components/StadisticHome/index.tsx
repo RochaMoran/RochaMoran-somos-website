@@ -13,7 +13,7 @@ const roboto = Roboto({
 export default function StadisticHome({ img, after, number, title }: any) {
   const statidisticRef = useRef(null);
   const { show } = useIntersectionObserver(statidisticRef);
-  const [numberStadistic, setNumberStadistic] = useState(0);
+  const [numberStadistic, setNumberStadistic] = useState(number > 80000 ? (number - 10000) : 0);
 
   if (show) {
     updateNumberStadistic();

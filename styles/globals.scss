@@ -280,10 +280,10 @@
 //WHO WE ARE
 .title {
   font-size: 2.3rem;
-  font-weight: 800;
   color: $color_five;
   margin-bottom: 20px;
   text-align: left;
+  font-weight: 700;
 
   @media screen and (max-width: 700px) {
     font-size: 1.8rem;
@@ -486,11 +486,17 @@
 }
 
 // DATA INSIGHTS
+  .data-insights {
+    & > h4 {
+      text-align: center;
+      color: white;
+    }
+}
+
 .data-insights__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   padding-bottom: 70px;
-  border-bottom: 1px solid #ddd;
 
   @media screen and (max-width: 700px) {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -509,6 +515,25 @@
 
 .stadistic-item {
   color: $color_primary;
+  background-color: white;
+  padding: 25px 10px;
+  border-radius: 15px;
+
+  //definir este color a los elementos 1, 4, 8... de forma sucesiva #66ffff
+  &:nth-child(1),
+  &:nth-child(4),
+  &:nth-child(8) {
+    background-color: #66ffff;
+  }
+  &:nth-child(2),
+  &:nth-child(6) {
+    background-color: #00cccc;
+  }
+  &:nth-child(3),
+  &:nth-child(5) {
+    background-color: #0d98ba;
+  }
+
   & > p {
     font-size: 2.2rem;
     display: block;
@@ -535,6 +560,10 @@
 // PROJECTS
 .last-news {
   position: relative;
+
+  & > h4 {
+    text-align: center;
+  }
 }
 
 .project {

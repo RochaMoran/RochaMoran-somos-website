@@ -3,7 +3,7 @@ import StadisticHome from '../StadisticHome'
 
 export default function DataInsights() {
   return (
-    <section className='section'>
+    <section className='section data-insights'>
         <h4 className='title'>Data insights: SOMOS Achievements</h4>
         <article className='data-insights__container'>
             {
@@ -14,7 +14,6 @@ export default function DataInsights() {
                 )
             }
         </article>
-        <button className="button stats-button">RETRACT</button>
     </section>
   )
 }
