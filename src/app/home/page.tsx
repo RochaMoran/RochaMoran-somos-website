@@ -1,3 +1,4 @@
+import Care from "../components/Care";
 import Carrousel from "../components/Carrousel";
 import DataInsights from "../components/DataInsights";
 import Footer from "../components/Footer";
@@ -19,6 +20,7 @@ export default function Home() {
       <Carrousel />
       <WhoWeAre />
       <HealthEquity />
+      <Care />
       <DataInsights />
       <LastNews />
       <Footer />

@@ -485,6 +485,37 @@
   }
 }
 
+// Care
+.care {
+  color: white;
+  border-bottom: 1px solid #afafaf;
+  padding: 20px 0;
+}
+
+.care-items__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.care-item {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  
+  & .care-item__image-container {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color_thirty;
+    border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+}
+
 // DATA INSIGHTS
   .data-insights {
     & > h4 {
