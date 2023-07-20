@@ -875,8 +875,7 @@
 .footer {
   position: relative;
   margin-top: 0;
-  padding: 0 40px;
-  background-color: #011a4d;
+  background-color: #2561dc;
 
   @media screen and (max-width: 1000px) {
     padding: 0 20px;
@@ -949,6 +948,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: #011a4d;
 
   @media screen and (max-width: 1000px) {
     flex-direction: column;
