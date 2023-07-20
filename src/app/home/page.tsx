@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HealthEquity from "../components/HealthEquity";
 import LastNews from "../components/LastNews";
+import Testimonial from "../components/Testimonial";
 import WhoWeAre from "../components/WhoWeAre";
 import type { Metadata } from "next";
 
@@ -25,6 +26,7 @@ export default function Home() {
       <DataInsights />
       <Covid />
       <LastNews />
+      <Testimonial />
       <Footer />
     </main>
   )
