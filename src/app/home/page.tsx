@@ -1,5 +1,6 @@
 import Care from "../components/Care";
 import Carrousel from "../components/Carrousel";
+import Covid from "../components/Covid";
 import DataInsights from "../components/DataInsights";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -22,6 +23,7 @@ export default function Home() {
       <HealthEquity />
       <Care />
       <DataInsights />
+      <Covid />
       <LastNews />
       <Footer />
     </main>

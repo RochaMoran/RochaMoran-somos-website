@@ -328,7 +328,8 @@
 }
 
 
-.health {
+.health,
+.covid {
   min-height: 450px;
   background-color: #e4f1ff;
   display: flex;
@@ -336,7 +337,8 @@
   align-items: center;
   position: relative;
 
-  & .health-img {
+  & .health-img,
+  & .covid-img {
     position: absolute;
     left: 0;
     top: 0;
@@ -355,16 +357,6 @@
     justify-content: center;
     text-align: center;
     padding: 30px 0;
-  }
-}
-
-.health-content {
-  width: 45%;
-  color: #223645;
-  z-index: 2;
-
-  @media screen and (max-width: 750px) {
-   width: 90%;
   }
 }
 
@@ -458,7 +450,8 @@
 }
 
 .btn-health,
-.btn-health__outset {
+.btn-health__outset,
+.btn-covid {
   padding: 10px 30px;
   font-size: 13px;
   background-color: $color_primary;
@@ -485,6 +478,67 @@
   }
 }
 
+// covid section 
+
+.covid-section {
+  position: relative;
+  
+  & .covid-img {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    z-index: 2;
+    width: 32%;
+
+    @media screen and (min-width: 1600px) {
+      width: 500px;
+    }
+
+    @media screen and (max-width: 1240px) {
+      width: 40%;
+    }
+    
+    @media screen and (max-width: 1060px) {
+      width: 45%;
+    }
+  
+    @media screen and (max-width: 750px) {
+      display: none;
+    }
+  }
+}
+
+.covid {
+  background-image: linear-gradient(90deg, $color_five 0%, $color_seven 50%, $color_seven 100%);
+}
+
+.btn-covid {
+  display: block;
+  width: max-content;
+  margin: 15px auto 0 auto;
+  background-color: #f7941d;
+}
+
+.health-content,
+.covid-content {
+  width: 45%;
+  color: #223645;
+  z-index: 2;
+
+  @media screen and (max-width: 750px) {
+   width: 90%;
+  }
+}
+
+.covid-content {
+  color: white;
+  width: 50%;
+
+  @media screen and (max-width: 750px) {
+    width: 90%;
+   }
+}
+
 // Care
 .care {
   color: white;
@@ -494,7 +548,8 @@
 
 .care-items__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin: 40px 0;
 }
 
@@ -502,6 +557,7 @@
   display: grid;
   place-items: center;
   border-radius: 50%;
+  margin: 10px;
   
   & .care-item__image-container {
     width: 120px;
