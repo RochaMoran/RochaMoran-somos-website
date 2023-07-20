@@ -2,6 +2,7 @@ import Care from "../components/Care";
 import Carrousel from "../components/Carrousel";
 import Covid from "../components/Covid";
 import DataInsights from "../components/DataInsights";
+import FindDoctor from "../components/FindDoctor";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HealthEquity from "../components/HealthEquity";
@@ -20,6 +21,7 @@ export default function Home() {
     <main className="">
       <Header />
       <Carrousel />
+      <FindDoctor />
       <WhoWeAre />
       <HealthEquity />
       <Care />
