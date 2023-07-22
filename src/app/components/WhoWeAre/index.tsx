@@ -41,8 +41,7 @@ export default function WhoWeAre() {
       </article>
       <article>
         <iframe
-          width="560"
-          height="315"
+          className="who-we-are__video"
           src="https://www.youtube.com/embed/RSgefnLznIY"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
