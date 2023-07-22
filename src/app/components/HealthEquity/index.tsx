@@ -1,9 +1,14 @@
+'use client';
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 
 export default function HealthEquity() {
+  const healthEquityRef = useRef(null);
+  const { show } = useIntersectionObserver(healthEquityRef);
+
   return (
-    <section>
+    <section className={`${show ? "animate-flip-up" : "opacity-0"}`}  ref={healthEquityRef}>
       <article className="health">
         <Image
           alt="Health Equity NY"

@@ -1,9 +1,15 @@
+'use client';
 import { careData } from "@/app/data/care";
 import CareItem from "../CareItem";
+import { useRef } from "react";
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 
 export default function Care() {
+  const careRef = useRef(null);
+  const { show } = useIntersectionObserver(careRef);
+
   return (
-    <section className="section care">
+    <section className={`section care ${show ? "animate-fade-right" : "opacity-0"}`}  ref={careRef}>
       <article>
         <h4 className="title">SOMOS Care</h4>
         <p>

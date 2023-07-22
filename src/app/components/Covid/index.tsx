@@ -1,8 +1,13 @@
+'use client';
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 import Image from "next/image";
+import React, { useRef } from "react";
 
 export default function Covid() {
+  const covidRef = useRef(null);
+  const { show } = useIntersectionObserver(covidRef);
   return (
-    <section className="covid-section">
+    <section className={`covid-section ${show ? "animate-flip-up" : "opacity-0"}`}  ref={covidRef}>
       <Image
         alt="Health Equity NY"
         src="/images/covid.svg"

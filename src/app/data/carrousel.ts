@@ -1,4 +1,4 @@
-import img1 from '../../../public/carrousel/carrousel-1.svg';
+import img1 from '../../../public/carrousel/carrousel-1.webp';
 
 export const carrouselData = [
   // {

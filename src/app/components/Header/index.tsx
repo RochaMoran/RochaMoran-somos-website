@@ -49,7 +49,7 @@ export  default function Header () {
   
 
   return (
-    <header className={`bg-white ${styles.header} ${roboto.className} ${show ? 'animate-fade-up' : ''}`} ref={headerRef} onMouseLeave={closeDropdown}>
+    <header className={`bg-white ${styles.header} ${roboto.className}`} ref={headerRef} onMouseLeave={closeDropdown}>
       <TopBar toggleMenu={toggleMenu}  isActiveMenu={isActiveMenu}/>
       <NavBar
         isDropdownOpen={isDropdownOpen}

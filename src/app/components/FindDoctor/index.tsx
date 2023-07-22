@@ -1,8 +1,14 @@
+'use client';
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
+import { useRef } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 
 export default function FindDoctor() {
+  const findDoctorRef = useRef(null);
+  const { show } = useIntersectionObserver(findDoctorRef);
+
   return (
-    <section className="section find-doctor">
+    <section className={`section find-doctor ${show ? "animate-fade" : "opacity-0"}`}  ref={findDoctorRef}>
       <h4>FIND A DOCTOR</h4>
       <form className="find-doctor__form">
         <div className="control-input">
