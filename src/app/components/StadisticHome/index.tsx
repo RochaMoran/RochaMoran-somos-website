@@ -13,7 +13,7 @@ const roboto = Roboto({
 export default function StadisticHome({ img, after, number, title }: any) {
   const statidisticRef = useRef(null);
   const { show } = useIntersectionObserver(statidisticRef);
-  const [numberStadistic, setNumberStadistic] = useState(number > 80000 ? (number - 10000) : 0);
+  const [numberStadistic, setNumberStadistic] = useState(number > 80000 ? (number - 3000) : 0);
 
   if (show) {
     updateNumberStadistic();
@@ -46,7 +46,7 @@ export default function StadisticHome({ img, after, number, title }: any) {
       <p className="text-2xl">
         {formatNumber(numberStadistic)} {after}
       </p>
-      <span className="block w-[60%] m-auto">{title}</span>
+      <span className="w-[60%]">{title}</span>
     </div>
   );
 }

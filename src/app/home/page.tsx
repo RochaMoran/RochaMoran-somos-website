@@ -13,23 +13,24 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "SOMOS COMMUNITY CARE | HOME",
-  description: "SOMOS is the only successful total cost of care Value-Based Payment model implemented by a physician-led group.",
+  description:
+    "SOMOS is the only successful total cost of care Value-Based Payment model implemented by a physician-led group.",
 };
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="home">
       <Header />
       <Carrousel />
       <FindDoctor />
       <WhoWeAre />
+      <DataInsights />
       <HealthEquity />
       <Care />
-      <DataInsights />
       <Covid />
       <LastNews />
       <Testimonial />
       <Footer />
     </main>
-  )
+  );
 }

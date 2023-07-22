@@ -4,7 +4,7 @@
 @import './utils/variables.scss';
 @import './utils/mixins';
 
-:root {
+body > .home {
   background-color: $color_six;
 }
 
@@ -107,7 +107,7 @@
   width: 100%;
   height: 400px;
   overflow: hidden;
-  z-index: -1;
+  z-index: 0;
 
   @media screen and (min-width: 1800px) {
     height: 900px;
@@ -134,11 +134,11 @@
   }
 
   @media screen and (max-width: 600px) {
-    height: 250px;
+    height: 300px;
   }
 
   @media screen and (max-width: 500px) {
-    height: 200px;
+    height: 250px;
   }
 }
 
@@ -205,24 +205,21 @@
       font-size: 3rem;
       line-height: 3.3rem;
     }
-    
-    @media screen and (max-width: 700px) {
-      font-size: 2.5rem;
-      line-height: 2.8rem;
-    }
 
     @media screen and (max-width: 600px) {
-      font-size: 2rem;
-      line-height: 2.3rem;
+      font-size: 2.3rem;
+      line-height: 2.4rem;
     }
-    @media screen and (max-width: 500px) {
-      font-size: 1.7rem;
+
+    @media screen and (max-width: 400px) {
+      font-size: 1.9rem;
       line-height: 1.9rem;
       margin-top: 5px;
     }
 
     @media screen and (max-width: 350px) {
-      width: 60%;
+      width: 70%;
+      font-size: 1.7rem;
     }
   }
 
@@ -236,8 +233,13 @@
     font-weight: 600;
 
     @media screen and (max-width: 700px) {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       padding-left: 5px;
+      border-left-width: 3px;
+    }
+
+    @media screen and (max-width: 400px) {
+      font-size: 0.8rem;
       border-left-width: 3px;
     }
   }
@@ -283,7 +285,6 @@
   position: relative;
   // bottom: 80px;
   background-color: $color_thirty;
-  // background-color: rgba(255, 0, 0, 0.153);
 
   transform: translateY(-50%);
   padding: 30px;
@@ -295,11 +296,12 @@
   
   @media screen and (max-width: 700px) {
     padding: 10px;
+    transform: translateY(0);
   }
 
   @media screen and (max-width: 600px) {
-    transform: translateY(0);
-  }  
+    padding: 5px;
+  }
 
   &::after,
   &::before {
@@ -383,6 +385,10 @@
       border: none;
       padding: 10px 15px;
       border-radius: 20px;
+
+      @media screen and (max-width: 550px) {
+        padding: 7px 15px;
+      }
     }
 
 
@@ -403,6 +409,12 @@
     outline: none;
     border: none;
     align-self: flex-end;
+
+    @media screen and (max-width: 450px) {
+      display: block;
+      margin: auto;
+      margin-top: 10px;
+    }
   }
 }
 
@@ -417,10 +429,17 @@
   @media screen and (max-width: 700px) {
     font-size: 1.8rem;
   }
+
+  @media screen and (max-width: 600px) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 1.5rem;
+  }
 }
 
 .who-we-are__video {
-  background-color: red;
   width: 500px;
   height: 300px;
 
@@ -428,6 +447,7 @@
     width: 300px;
     height: 200px;
   }
+
   
   @media screen and (max-width: 350px) {
     width: 100%;
@@ -455,6 +475,10 @@
 
   @media screen and (max-width: 1300px) {
     flex-direction: column;
+  }
+
+  @media screen and (max-width: 600px) {
+    text-align: center;
   }
 }
 
@@ -746,6 +770,10 @@
 }
 
 .stadistic-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: $color_primary;
   background-color: white;
   padding: 25px 10px;
@@ -769,14 +797,36 @@
   & > p {
     font-size: 2.2rem;
     display: block;
-    margin: 10px;
+    margin: 15px 10px 10px 10px;
     font-weight: 700;
+
+    @media screen and (max-width: 550px) {
+      font-size: 1.8rem;
+      margin: 5px;
+    }
   }
 
   & > span {
     font-size: .7rem;
     font-weight: 600;
   }
+
+  & > img {
+    @media screen and (max-width: 550px) {
+      height: 75px;
+      width: 75px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 300px;
+  }
+
+  @media screen and (max-width: 550px) {
+    margin: 5px 3px;
+    height: max-content;
+  }
+
 }
 
 .stats-button {
@@ -826,6 +876,10 @@
   overflow: hidden;
   position: relative;
   transition: transform 0.3s ease-in-out;
+
+  @media screen and (max-width: 450px) {
+    height: 220px;
+  }
 }
 
 .project:hover .project-image {
@@ -957,10 +1011,11 @@
 
 .footer-double__items {
   display: flex;
-
+  
   @media screen and (max-width: 600px) {
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
     // align-items: center;
   }
 }
