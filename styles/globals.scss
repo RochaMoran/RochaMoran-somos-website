@@ -283,12 +283,15 @@ body > .home {
 // SEARCH DOCTOR
 .find-doctor {
   position: relative;
-  // bottom: 80px;
   background-color: $color_thirty;
+  transform: translateY(-74.5%);
 
-  transform: translateY(-50%);
   padding: 30px;
   color: white;
+
+  @media screen and (max-width: 1300px) {
+    transform: translateY(-56%);
+  }
 
   @media screen and (max-width: 900px) {
     transform: translateY(-30%);
@@ -303,59 +306,34 @@ body > .home {
     padding: 5px;
   }
 
-  &::after,
-  &::before {
+  &::before,
+  &::after { 
     content: "";
     position: absolute;
-    width: 5%;
-    height: 50%;
-    background-color: rgb(143, 8, 8);
-    z-index: -1;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    display: none;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   &::before {
-    top: -5%;
-    left: -3.1%;
-    transform: translate(-10%, 10%) rotate(22deg);
+    width: 112%;
+    height: 100px;
+    background-color: rgb(143, 8, 8);
+    top: 0;
+    left: 0;
+    left: -6.2%;
+    clip-path: polygon(5.5% 0%, 94.9% 0%, 100% 100%, 100% 100%, 0 100%, 0% 100%);
+    z-index: -1;
   }
 
-  &::after {
-    top: 5%;
-    right: -3.1%;
-    transform: translate(10%, -10%) rotate(-22deg);
-  }
-
-  @media screen and (min-width: 1700px) {
-    &::after,
-    &::before {
-      width: 6%;
-    }
-  }
-
-  @media screen and (max-width: 1450px) {
-    &::after,
-    &::before {
-      width: 7%;
-    }
-
-    &::before {
-      transform: translate(-15%, 5%) rotate(20deg);
-    }
-  
-    &::after {
-      transform: translate(15%, -10%) rotate(-20deg);
-    }
-  }
-
-  @media screen and (max-width: 900px) {
-    bottom: 0;
-
-    &::after,
-    &::before {
-      display: none;
-    }
+  &::after { 
+    background-color: $color_thirty;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 }
 
@@ -411,7 +389,7 @@ body > .home {
     align-self: flex-end;
     @include hover-button-2(#fff);
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 1300px) {
       display: block;
       margin: auto;
       margin-top: 10px;
@@ -971,10 +949,16 @@ body > .home {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   place-items: center;
   background-color: #dfdfdf;
-  padding: 20px;
+  padding: 20px 60px;
 
   @media screen and (max-width: 900px) {
     grid-template-columns: 1fr;
+    padding: 20px 40px;
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    padding: 20px 10px;
   }
 
   & figure {
@@ -995,7 +979,27 @@ body > .home {
 
     @media screen and (max-width: 350px) {
       width: 100%;
-      height: 200px;
+      height: 250px;
+    }
+  }
+
+  .testimonials-starts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 900px) {
+      justify-content: center;
+    }
+
+    .testimonial-star {
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      border: .1px solid #e8a135;
+      background-color: #f6ab3b;
+      width: 30px;
+      height: 30px;
     }
   }
 

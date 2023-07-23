@@ -10,7 +10,14 @@ export default function Testimonial() {
   return (
     <section className={`section testimonials ${show ? "animate-fade-down" : "opacity-0"}`}  ref={testimonialRef}>
       <article>
-        <p>
+        <div className="testimonials-starts">
+          <div className="testimonial-star"></div>
+          <div className="testimonial-star"></div>
+          <div className="testimonial-star"></div>
+          <div className="testimonial-star"></div>
+          <div className="testimonial-star"></div>
+        </div>
+        <q>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quos
           exercitationem veritatis libero at placeat error vel, accusantium
           consequatur, qui possimus eius cupiditate! Nam vel deleniti quibusdam
@@ -19,7 +26,7 @@ export default function Testimonial() {
           exercitationem veritatis libero at placeat error vel, accusantium
           consequatur, qui possimus eius cupiditate! Nam vel deleniti quibusdam
           aspernatur modi exercitationem?
-        </p>
+        </q>
         <span>- Don Ramón Valdez</span>
       </article>
       <figure>
