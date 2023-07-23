@@ -98,12 +98,13 @@
     & > li > .navbarItemLink {
         padding: 20px 5px;
         position: relative;
+        display: block;
         
         @media screen and (min-width: 1000px) {
             &::before {
                 content: "";
                 position: absolute;
-                bottom: -3px;
+                bottom: -4px;
                 left: 0;
                 width: calc(100% + 25px);
                 height: 5px;
@@ -131,13 +132,13 @@
             &::after {
                 content: "";
                 position: absolute;
-                bottom: -5px;
+                bottom: -4px;
                 left: 0;
                 width: calc(100% + 20px);
                 height: 5px;
-                transform: translateX(-10px);
+                transform: translateX(-8px);
                 background-color: $color_thirty;
-                opacity: 1 !important;
+                opacity: 1;
             }
         }
     }
