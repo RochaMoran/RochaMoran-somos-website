@@ -1,7 +1,6 @@
 'use client';
 import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
-import Image from "next/image";
-import React, { useRef } from "react";
+import { useRef } from "react";
 
 export default function Testimonial() {
   const testimonialRef = useRef(null);
@@ -30,11 +29,12 @@ export default function Testimonial() {
         <span>- Don Ramón Valdez</span>
       </article>
       <figure>
-        <Image
+        <img
           src="/images/testimonial.png"
           width={400}
           height={400}
-          alt="Testimonial"
+          alt="Testimonial Don Ramón Valdez"
+          loading="lazy"
         />
       </figure>
     </section>

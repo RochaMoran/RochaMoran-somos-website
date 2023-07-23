@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function ItemCarrosuel({ title, subtitle, src, isVideo = false }: any) {
   return (
     <div className={`main-carrousel__item`}>
@@ -18,7 +16,7 @@ export default function ItemCarrosuel({ title, subtitle, src, isVideo = false }:
             playsInline
           />
         ) : (
-          <Image
+          <img
             className="carrousel-item__image"
             src={src}
             alt={title}

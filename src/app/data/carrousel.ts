@@ -1,5 +1,3 @@
-import img1 from '../../../public/carrousel/carrousel-1.webp';
-
 export const carrouselData = [
   // {
   //   id: 1,
@@ -12,7 +10,7 @@ export const carrouselData = [
     id: 2,
     title: 'Health Care Revolution',
     subtitle: 'We Know how to take care of you',
-    src: img1,
+    src: '/carrousel/carrousel-1.webp',
     isVideo: false
   },
 ];

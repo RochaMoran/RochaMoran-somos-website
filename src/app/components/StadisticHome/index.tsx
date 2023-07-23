@@ -1,7 +1,6 @@
 "use client";
 import { formatNumber } from "@/app/helpers/functions";
-import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Roboto } from "next/font/google";
 import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 
@@ -36,12 +35,13 @@ export default function StadisticHome({ img, after, number, title }: any) {
       } stadistic ${show ? "animate-fade-down animate-duration-600 " : ""}`}
       ref={statidisticRef}
     >
-      <Image
+      <img
         src={img}
-        alt="Stadistic"
+        alt={title}
         width={100}
         height={100}
         className="inline-block"
+        loading="lazy"
       />
       <p className="text-2xl">
         {formatNumber(numberStadistic)} {after}

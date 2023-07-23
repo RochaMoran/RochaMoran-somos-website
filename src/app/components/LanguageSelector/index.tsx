@@ -2,7 +2,6 @@
 import { useRef, useState } from "react";
 import { BsChevronDown } from 'react-icons/bs'
 import styles from "../../../../styles/components/LanguageSelector.module.scss";
-import Image from "next/image";
 
 const languages = [
   { code: "en", name: "English" },
@@ -31,12 +30,13 @@ const LanguageSelector = () => {
       onMouseLeave={() => setIsDropdownOpen(false)}
     >
       <div className={styles.selectedLanguage} onClick={toggleDropdown}>
-        <Image
+        <img
           src={`/icons/langs/${selectedLanguage.code}.svg`}
-          alt="us-flag"
+          alt={`${selectedLanguage.name}-flag`}
           width={20}
           height={20}
           className="md:min-w-[25px] lg:min-w-[35px]"
+          loading="lazy"
         />
         <BsChevronDown className={`ml-2 transition-transform duration-300 ${isDropdownOpen ? styles.dropdownActive : ''}`} />
       </div>
@@ -48,12 +48,13 @@ const LanguageSelector = () => {
               className={styles.languageItem}
               onClick={() => handleLanguageChange(language)}
             >
-              <Image
+              <img
                 src={`/icons/langs/${language.code}.svg`}
-                alt="us-flag"
+                alt={`${language.name}-flag`}
                 width={25}
                 height={25}
                 className="mx-2"
+                loading="lazy"
               />
               <span>{language.name}</span>
             </li>

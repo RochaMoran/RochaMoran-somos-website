@@ -58,7 +58,7 @@ export default function Footer() {
             </div>
         </div>
         <div className="footer-bottom">
-            <Image width={100} height={100} className="footer-logo" src="/images/somos-white-logo.webp" alt="somos-logo" />
+            <img width={100} height={100} className="footer-logo" src="/images/somos-white-logo.webp" alt="somos-white-logo" loading="lazy" />
             <p className="footer-copyrigth">
                 © 2023 SOMOS Healthcare Providers, Inc. dba SOMOS Community Care (SOMOS). All rights reserved. <br />
                 <a href="/services" className="underline">PRIVACY POLICY | TERMS OF USE | NOTICE OF NONDISCRIMINATION</a> | Site Developed by <a href="#" className="underline">GSDO/Crew</a>

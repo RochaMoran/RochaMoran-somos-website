@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 import { useRef } from "react";
 
@@ -22,7 +21,7 @@ export default function Section({
       ref={sectionRef}
     >
       <article className="section-component__article-img">
-        <Image src={image} alt={title} className="" width={400} height={370} />
+        <img src={image} alt={title} className="" width={400} height={370} loading="lazy" />
       </article>
       <article
         className={`section-component__article-content ${

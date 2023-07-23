@@ -1,4 +1,3 @@
-import Image from "next/image";
 import LanguageSelector from "../LanguageSelector";
 import styles from "../../../../styles/components/Header.module.scss";
 import { BsSearch } from "react-icons/bs";
@@ -13,13 +12,13 @@ export default function TopBar({toggleMenu, isActiveMenu}: any) {
         <span className="line line-bottom"></span>
       </button>
       <Link href="/">
-        <Image
+        <img
           className={`h-auto lg:w-52 sm:w-34 ${styles.topBarLogo}`}
           src="/images/logo-somos.webp"
           alt="somos-logo"
           width={200}
           height={150}
-          priority
+          loading="lazy"
         />
       </Link>
       <div
