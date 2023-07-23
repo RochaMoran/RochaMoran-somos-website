@@ -1,7 +1,7 @@
 "use client";
 import ItemCarrosuel from "../ItemCarrousel";
 import { carrouselData } from "@/app/data/carrousel";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 import { useRef } from "react";
 
@@ -13,6 +13,24 @@ export default function Carrousel() {
   const updateIndex = (i: number) => {
     setIndex(() => i);
   };
+
+    // Auto slide effect
+    useEffect(() => {
+      let intervalId: NodeJS.Timeout;
+  
+      const autoSlide = () => {
+        setIndex((prevIndex) => (prevIndex + 1) % carrouselData.length);
+      };
+  
+      if (show) {
+        intervalId = setInterval(autoSlide, 10000); // Change slide every 5 seconds (adjust the time as needed)
+      }
+  
+      return () => {
+        clearInterval(intervalId);
+      };
+    }, [show]);
+
   return (
     <article
       className={`main-carrousel ${show ? "animate-fade-down" : ""}`}
@@ -35,7 +53,7 @@ export default function Carrousel() {
           />
         ))}
       </div>
-      {/* <div className="carrousel-circle">
+      <div className="carrousel-circle">
         {carrouselData.map((item, i) => (
           <div
             onClick={() => updateIndex(i)}
@@ -47,7 +65,7 @@ export default function Carrousel() {
             }
           />
         ))}
-      </div> */}
+      </div>
     </article>
   );
 }
