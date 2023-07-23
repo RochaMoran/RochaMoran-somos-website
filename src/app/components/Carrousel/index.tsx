@@ -35,7 +35,7 @@ export default function Carrousel() {
           />
         ))}
       </div>
-      <div className="carrousel-circle">
+      {/* <div className="carrousel-circle">
         {carrouselData.map((item, i) => (
           <div
             onClick={() => updateIndex(i)}
@@ -47,7 +47,7 @@ export default function Carrousel() {
             }
           />
         ))}
-      </div>
+      </div> */}
     </article>
   );
 }
