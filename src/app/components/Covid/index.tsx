@@ -21,7 +21,7 @@ export default function Covid() {
             LEADING THROUGH <br /> COVID-19
           </h4>
           <h6>
-            LEARNED FROM A <br /> ONCE-IN-A LIFETIME PANDEMIC
+            LESSONS LEARNED FROM A <br /> ONCE IN A LIFE TIME PANDEMIC
           </h6>
           <p className="health-content__content">
             In March 2020, in the earliest days of the COVID-19 pandemic and at

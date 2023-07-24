@@ -42,7 +42,7 @@ export default function WhoWeAre() {
       <article>
         <iframe
           className="who-we-are__video"
-          src="https://www.youtube.com/embed/RSgefnLznIY"
+          src="https://www.youtube.com/embed/GXiwLKOt7MA"
           title="SOMOS COMMUNITY CARE"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           loading="lazy"

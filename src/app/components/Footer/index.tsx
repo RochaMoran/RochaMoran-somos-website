@@ -19,7 +19,7 @@ export default function Footer() {
                         <div className="footer-items">
                             <a href="/services">Annual Reports</a>
                             <a href="/services">COVID-19</a>
-                            <a href="/services">Monkeypox</a>
+                            <a href="/services">DSRIP</a>
                             <a href="/services">Impact Report</a>
                             <a href="/services">Zika</a>
                             <a href="/services">Health Education</a>
