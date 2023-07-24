@@ -8,9 +8,16 @@ export const carrouselData = [
   },
   {
     id: 2,
-    title: 'Health Care Revolution',
-    subtitle: 'We Know how to take care of you',
+    title: 'SOMOS at frontline',
+    subtitle: 'LEADING THROUGH COVID-19',
     src: '/carrousel/carrousel-2.webp',
+    isVideo: false
+  },
+  {
+    id: 3,
+    title: `Let's Talk Mental Health`,
+    subtitle: 'IS OK NOT TO BE OK!',
+    src: '/carrousel/carrousel-3.webp',
     isVideo: false
   },
 ];
