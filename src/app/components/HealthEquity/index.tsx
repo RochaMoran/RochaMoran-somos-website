@@ -7,7 +7,7 @@ export default function HealthEquity() {
   const { show } = useIntersectionObserver(healthEquityRef);
 
   return (
-    <section className={`${show ? "animate-flip-up" : "opacity-0"}`}  ref={healthEquityRef}>
+    <section className={`${show ? "animate-flip-up duration-1000" : "opacity-0"}`}  ref={healthEquityRef}>
       <article className="health">
         <img
           alt="Health Equity NY"

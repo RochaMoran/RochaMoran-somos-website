@@ -9,7 +9,7 @@ export default function PostCard({ data }: any) {
   const postRef = useRef(null);
   const { show } = useIntersectionObserver(postRef)
   return (
-    <div className={`animated project ${show ? 'animate-fade-up' : 'opacity-0'}`} ref={postRef}>
+    <div className={`animated project ${show ? 'animate-fade-up duration-1000' : 'opacity-0'}`} ref={postRef}>
       <img src={img} className="project-image" alt={title} loading="lazy" />
       <div className={`project-info`}>
         <h6 className="inline-block project-title">{title}</h6>

@@ -6,7 +6,7 @@ export default function Covid() {
   const covidRef = useRef(null);
   const { show } = useIntersectionObserver(covidRef);
   return (
-    <section className={`covid-section ${show ? "animate-flip-up" : "opacity-0"}`}  ref={covidRef}>
+    <section className={`covid-section ${show ? "animate-flip-up duration-1000" : "opacity-0"}`}  ref={covidRef}>
       <img
         alt="Dr. Ramon Tallaj"
         src="/images/covid.svg"

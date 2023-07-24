@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 const options = {
-  threshold: .3,
+  threshold: .4,
   rootMargin: "100px",
 };
 

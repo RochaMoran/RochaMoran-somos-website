@@ -8,7 +8,7 @@ export default function WhoWeAre() {
 
   return (
     <section
-      className={`section about [&>article]:m-4 ${show ? "animate-fade-up" : "opacity-0"}`}
+      className={`section about [&>article]:m-4 ${show ? "animate-fade-up duration-1000" : "opacity-0"}`}
       ref={whoWeAreRef}
     >
       <article>

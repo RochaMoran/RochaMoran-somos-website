@@ -7,7 +7,7 @@ export default function Testimonial() {
   const { show } = useIntersectionObserver(testimonialRef);
 
   return (
-    <section className={`section testimonials ${show ? "animate-fade-down" : "opacity-0"}`}  ref={testimonialRef}>
+    <section className={`section testimonials ${show ? "animate-fade-down duration-1000" : "opacity-0"}`}  ref={testimonialRef}>
       <article>
         <div className="testimonials-starts">
           <div className="testimonial-star"></div>

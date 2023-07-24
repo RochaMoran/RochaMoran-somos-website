@@ -33,7 +33,7 @@ export default function Carrousel() {
 
   return (
     <article
-      className={`main-carrousel ${show ? "animate-fade-down" : ""}`}
+      className={`main-carrousel ${show ? "animate-fade-down duration-500" : ""}`}
       ref={carrouselRef}
     >
       <div

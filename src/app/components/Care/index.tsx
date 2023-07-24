@@ -9,7 +9,7 @@ export default function Care() {
   const { show } = useIntersectionObserver(careRef);
 
   return (
-    <section className={`section care ${show ? "animate-fade-right" : "opacity-0"}`}  ref={careRef}>
+    <section className={`section care ${show ? "animate-fade-right duration-1000" : "opacity-0"}`}  ref={careRef}>
       <article>
         <h4 className="title">SOMOS Care</h4>
         <p>
